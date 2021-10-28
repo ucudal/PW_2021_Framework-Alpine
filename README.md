@@ -1,10 +1,8 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6048173&assignment_repo_type=AssignmentRepo)
-
-### Alpine 
+# Alpine 
  
 Alpine.js ofrece las propiedades reactivas y declarativas de grandes frameworks como Vue o React con un coste mucho menor. Mantiene el DOM, pudiendo mejorar y perfeccionar el comportamiento como más convenga. 
  
-# Plugin 🌲 Spruce 
+## Plugin 🌲 Spruce 
  
 Una capa de gestión de estado global ligera para Alpine.js 
  
@@ -15,7 +13,7 @@ Una capa de gestión de estado global ligera para Alpine.js
 > Con el lanzamiento de [Alpine 3.x](https://github.com/alpinejs/alpine-next), Spruce ha sido reemplazado por un asistente de [`$store`](https://alpinejs.dev/magics/store) ayuda, así mismo [`Alpine.store`](https://alpinejs.dev/magics/store). 
 Este paquete seguirá siendo compatible con Alpine 2.x, pero solo con las versiones de seguridad ❤️ 
 
-## Documentación 
+### Documentación 
 
 Para aprender más de Spruce y cómo usarlo, por favor ir a [documentación oficial](https://spruce.ryangjchandler.co.uk). 
  
@@ -26,18 +24,17 @@ Para aprender más de Spruce y cómo usarlo, por favor ir a [documentación ofic
 Alpine.js devtools es una simple extensión para permitirte debuguear [Alpine.js](https://github.com/alpinejs/alpine) componentes fácilmente. 
 > Esta extensión está inspirada en  [Vue devtools](https://github.com/vuejs/vue-devtools),pero customizada para Alpine.js . 
 
-## Instalación  
+### Instalación  
 
 -   [Get the Chrome Extension](https://chrome.google.com/webstore/detail/alpinejs-devtools/fopaemeedckajflibkpifppcankfmbhk) 
 -   [Get the Firefox Extension](https://addons.mozilla.org/firefox/addon/alpinejs-devtools/) 
 
-## Identificación de componentes 
+### Identificación de componentes 
 
 A diferencia de otros frameworks, Alpine no incluye  named components. Por eso pordefault, Alpine.js devtools intentara identificar los component names  
 de los atributos. 
  
-
-# Pre requisitos 
+### Pre requisitos 
 
 -   Node ^14.x 
 -   npm ^6.x 
@@ -46,11 +43,11 @@ de los atributos.
  
 A devtools simulator se puede utilizar para correr test y tener un flujo de trabajo. 
 
-#Plugin Magic Helpers 
+## Plugin Magic Helpers 
 
 Una colección de magic properties y helper functions para usar con [Alpine.js](https://github.com/alpinejs/alpine) version 2 
 
-## Funcionalidades 
+### Funcionalidades 
 
 | Magic Helpers | Descripcion | 
 | --- | --- | 
@@ -63,20 +60,20 @@ Una colección de magic properties y helper functions para usar con [Alpine.js](
 | [`$truncate`](#truncate) | Limita un texto String a un número específico de caracteres. | 
 | [`$undo`](#undo) | Detectar cambios de estado dentro de tus componentes. | 
 
-# Plugin Alpine.js Test Utils 
+## Plugin Alpine.js Test Utils 
 
 Utilidades para testing de componentes Alpine.js . 
 **Esta librería te permite escribir rápido y fácil test para Alpine.js  
 
-# Plugin Pinecone Router 
+## Plugin Pinecone Router 
 
 La extensión client-side router para Alpine.js. 
 
-## Compatibilidad 
+### Compatibilidad 
 
 [Currently works with Alpine.js v2 only](https://github.com/pinecone-router/router/issues/12) 
 
-## Funcionalidades 
+### Funcionalidades 
 
 Un enrutador del lado del cliente fácil de usar, pero repleto de funciones para usar con Alpine.js. 
 Puede ser usado con: 
@@ -90,4 +87,3 @@ Puede ser usado con:
 * [Alpine.js Discord Community](https://discord.gg/CGmj5nq) 
 * [Alpine.js Matrix Community](https://matrix.to/#/#AlpineJS:matrix.org) 
 * [Alpine.js Persian Matrix Community](https://matrix.to/#/#AlpineJS-fa:matrix.org) 
-
