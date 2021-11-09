@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sortable Gallery with AlpineJS | Jaroslav Janik</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <section x-data="store" class="gallery">
+      <div class="sort">
+        <ul class="sort-links">
+          <li class="link-item">
+            <a
+              href="#"
+              @click.prevent="tab = 'all'"
+              :class="{ 'active' : tab === 'all' }"
+              >All</a
+            >
+          </li>
+          <template x-for="type in types">
+            <li class="link-item">
+              <a
+                href="#"
+                @click.prevent="tab = type.name"
+                :class="{ 'active' : tab === type.name }"
+                x-text="type.display"
+              ></a>
+            </li>
+          </template>
+        </ul>
+      </div>
+      <div class="images">
+        <template x-for="picture in pictures">
+          <div class="singleImg" x-show="tab === picture.type || tab === 'all'">
+            <img
+              x-bind:src="picture.url"
+              @click.prevent="pictures.remove(p => p.url === picture.url)"
+            />
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <!-- AlpineJS -->
+
+    <script type="module" src="./index.js" defer></script>
+  </body>
+</html>
